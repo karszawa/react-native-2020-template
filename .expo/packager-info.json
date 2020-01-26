@@ -1,0 +1,10 @@
+{
+  "devToolsPort": 19002,
+  "expoServerPort": 19000,
+  "packagerPort": 19001,
+  "packagerPid": 22976,
+  "expoServerNgrokUrl": "https://cb-rqi.siquare.kanda.exp.direct",
+  "packagerNgrokUrl": "https://packager.cb-rqi.siquare.kanda.exp.direct",
+  "ngrokPid": 23020,
+  "webpackServerPort": null
+}
