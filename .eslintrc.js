@@ -3,7 +3,7 @@ const path = require("path");
 module.exports = {
   root: true,
   env: {
-    browser: false,
+    browser: true,
     es6: true,
     node: true
   },

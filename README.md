@@ -28,6 +28,10 @@ yarn start
 
 4. Scan the QR code on the screen by your phone :tada:
 
+## If you want to run this app with data
+
+
+
 ## File structure
 
 ## Tech stack

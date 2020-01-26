@@ -1,26 +1,17 @@
 import { NavigationNativeContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
 import React from "react";
+import { useSelector } from "react-redux";
 
+import { selectIsLoggedIn } from "../store/selector";
 import { AuthNavigator } from "./AuthNavigator";
-import { MainNavigator } from "./MainNavigator";
-import { Stack as StackName } from "./Screen";
+import { MainTabNavigator } from "./MainTabNavigator";
 
-const Stack = createStackNavigator();
+export const RootNavigator = () => {
+  const isLoggedIn = useSelector(selectIsLoggedIn);
 
-export const RootNavigator = () => (
-  <NavigationNativeContainer>
-    <Stack.Navigator>
-      <Stack.Screen
-        name={StackName.Auth}
-        component={AuthNavigator}
-        options={{ header: () => null }}
-      />
-      <Stack.Screen
-        name={StackName.Main}
-        component={MainNavigator}
-        options={{ header: () => null }}
-      />
-    </Stack.Navigator>
-  </NavigationNativeContainer>
-);
+  return (
+    <NavigationNativeContainer>
+      {isLoggedIn ? <MainTabNavigator /> : <AuthNavigator />}
+    </NavigationNativeContainer>
+  );
+};

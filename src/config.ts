@@ -8,6 +8,7 @@ import {
   FIREBASE_MESSAGING_SENDER_ID,
   FIREBASE_PROJECT_ID,
   FIREBASE_STORAGE_BUCKET,
+  SENTRY_DSN,
 } from "react-native-dotenv";
 
 export const firebaseConfig = {
@@ -21,8 +22,13 @@ export const firebaseConfig = {
   measurementId: FIREBASE_MEASUREMENT_ID,
 };
 
+export const sentryConfig = {
+  sentry: SENTRY_DSN,
+};
+
 export const config = {
   firebase: firebaseConfig,
+  sentry: sentryConfig,
 };
 
 export type ConfigType = typeof config;
