@@ -1,10 +1,14 @@
 # React Native Template 2020
 
+- React
+- React Native
 - Expo
 - Firebase
 - react-navigation
 - Redux & Redux Toolkit & ReduxThunk
 - @ant-design/react-native
+- Lottie
+- TypeScript
 - ESLint
 
 ## How to run this app
