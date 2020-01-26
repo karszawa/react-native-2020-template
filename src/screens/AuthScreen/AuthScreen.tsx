@@ -1,7 +1,7 @@
 import { useNavigation } from "@react-navigation/native";
 import LottieView from "lottie-react-native";
 import React, { useEffect } from "react";
-import { View } from "react-native";
+import styled from "styled-components/native";
 
 import { useAppDispatch } from "../../hooks/useAppDispatch";
 import { Screen } from "../../navigators/Screen";
@@ -25,15 +25,7 @@ export const AuthScreen = () => {
   }, []);
 
   return (
-    <View
-      style={{
-        flex: 1,
-        width: "100%",
-        backgroundColor: Color.Black,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
+    <Container>
       <LottieView
         autoPlay
         cacheStrategy="strong"
@@ -41,6 +33,14 @@ export const AuthScreen = () => {
         source={denoDanceAnimation}
         style={{ width: 120 }}
       />
-    </View>
+    </Container>
   );
 };
+
+const Container = styled.View`
+  flex: 1;
+  width: 100%;
+  background-color: ${Color.Black};
+  justify-content: center;
+  align-items: center;
+`;

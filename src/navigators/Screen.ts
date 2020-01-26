@@ -8,6 +8,6 @@ export enum Screen {
 }
 
 export enum Stack {
-  Auth = "AuthStack",
-  Main = "MainStack",
+  Order = "OrderStack",
+  Table = "TableStack",
 }
