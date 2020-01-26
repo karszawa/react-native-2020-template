@@ -7,6 +7,7 @@
 - react-navigation
 - Redux & Redux Toolkit & ReduxThunk
 - @ant-design/react-native
+- styled-components
 - Lottie
 - TypeScript
 - ESLint
